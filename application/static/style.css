@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(253, 254, 255);
+    /* background-color: red; */
+    /* background: linear-gradient(133deg, rgba(228,207,188,1) 0%, rgba(205,203,201,1) 45%, rgba(196,201,217,1) 100%); */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.copy_span{
+    color: rgb(31, 8, 148);
+}
+
+.link {
+    width: 30%;
+    height: 50px;
+    background-color: rgb(31, 8, 148);
+    border-radius: 10px;
+    transition: all .5s ease;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form * {
+    width: 100%;
+}
+
+form input{
+    border: 1px solid rgb(89, 89, 89);
+    padding: 20px 0 20px 30px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+
+form button {
+    height: 50px;
+    background-color: rgb(31, 8, 148);
+    border-radius: 25px;
+    transition: all .5s ease;
+    color: #fff;
+    border: none;
+}
+
+form p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+form button:hover {
+    background-color: blue;
+}
+
+.link:hover {
+    background-color: blue;
+}
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin-top: 70px;
+    margin-left: 60px;
+    /* background-color: blueviolet; */
+}
+
+.result-hd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.result-hd a {
+    background-color: rgb(31, 8, 148);
+    border-radius: 25px;
+    transition: all .5s ease;
+    color: #fff;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 250px;
+
+}
+
+.result-hd a:hover {
+    background-color: blue;
+}
+
+ul {
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    /* padding: 30px; */
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+li {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    padding: 26px;
+    box-sizing: border-box;
+    background-color: rgb(243, 246, 248);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.183);
+    border-radius: 20px;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+li :nth-child(1){
+    font-size: 32px;
+    font-weight: 500;
+    
+}
+
+li :nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+li :nth-child(1){
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 150px;
+    padding-top: 30px;
+} 
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-div img {
+   width: 130px;
+} 
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.menu p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 54px;
+    width: max-content;
+}
+
+.home{
+    color: rgb(31, 8, 148);
+    font-weight: 600;
+} 
+

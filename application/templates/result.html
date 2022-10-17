@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    
+    <div class="link">
+        <a href="/">Return to the home page</a>
+    </div>
+
+    <div class="result">
+        <div class="result-hd">
+            {% if data[0] != False: %}
+                <h2>Results for {{data[1]}}</h2>
+                <a href="/download">Export as csv</a>
+
+            {% else %}
+                <h2>There was no results for {{data[1]}}</h2>
+            {% endif %}
+        </div>
+        <ul>
+            {% if data[0] != False: %}
+                {% for i in data[0] %}
+                <li>
+                    <p>Business Name: {{i['name']}}</p>
+                    <p>Business Address: {{i['address']}}</p>
+                    <p>Phone Number(s): {{i['number']}}</p>
+                </li>
+                {% endfor %}
+            {% endif %}
+            
+        </ul>
+    </div>
+    
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="intro">
+        <h1>Finding <span class="copy_span">Partners</span> in Nigeria has never been easier</h1>
+
+        <form action="/search" method="post">
+            <p>Find businesses by Industry and/or location</p>
+            <label for="business"></label>
+            <input type="text" name="business" id="business" placeholder="Interior designers">
+            <input type="text" name="location" id="location" placeholder="Lagos">
+            <button>Search</button>
+        </form>
+    </div>
+{% endblock content %}
